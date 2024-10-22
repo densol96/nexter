@@ -1,0 +1,9 @@
+.story__pictures {
+  background-color: pink;
+  grid-column: full-start / col-end 4;
+}
+
+.story__content {
+  background-color: green;
+  grid-column: col-start 5 / full-end;
+}

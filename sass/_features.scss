@@ -1,4 +1,28 @@
 .features {
   background-color: aquamarine;
   grid-column: center-start / center-end;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
+  margin: 15rem 0;
+  align-items: start;
+  gap: 6rem;
+}
+
+.feature {
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  row-gap: 1.5rem;
+  column-gap: 2.5rem;
+
+  &__icon {
+    fill: $color-primary;
+    width: 4.5rem;
+    height: 4.5rem;
+    transform: translate(-1rem);
+    grid-row: 1 / span 2;
+  }
+
+  &__text {
+    font-size: 1.7rem;
+  }
 }

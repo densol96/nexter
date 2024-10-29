@@ -8,6 +8,8 @@
   padding: 1.5rem;
 
   .gallery__item {
+    overflow: hidden;
+
     &--1 {
       grid-column: 1 / span 2;
       grid-row: 1 / span 2;
@@ -79,5 +81,10 @@
     height: 100%;
     object-fit: cover;
     display: block;
+    transition: transform 300ms;
+
+    &:hover {
+      transform: scale(1.1);
+    }
   }
 }

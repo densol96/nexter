@@ -11,6 +11,7 @@
     height: 2px;
     width: 4.5rem;
     margin-top: 4rem;
+    position: fixed;
 
     &::before,
     &::after {
@@ -19,6 +20,7 @@
       width: 4.5rem;
       content: "";
       display: block;
+      position: fixed;
     }
 
     &::before {

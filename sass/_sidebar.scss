@@ -4,6 +4,21 @@
   grid-column: sidebar-start / sidebar-end;
   display: flex;
   justify-content: center;
+  height: 100%;
+  z-index: 10000;
+
+  @media only screen and (max-width: $bp-large) {
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
+    height: 100%;
+    position: sticky;
+    top: 0;
+    align-items: center;
+
+    &__nav-btn {
+      transform: translateY(-2rem);
+    }
+  }
 
   &__nav-btn {
     border: none;
@@ -21,6 +36,10 @@
       content: "";
       display: block;
       position: fixed;
+
+      @media only screen and (max-width: $bp-large) {
+        position: relative;
+      }
     }
 
     &::before {
